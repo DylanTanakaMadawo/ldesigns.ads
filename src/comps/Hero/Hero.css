@@ -1,0 +1,46 @@
+.hero-container {
+    height: 100vh;
+    /* background: url(../../images/images/Home/cards.jpg) no-repeat center/cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: pink; */
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+}
+.hero-info h1 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+.hero-info p{
+    font-size: 30px;
+    line-height: 45px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-info h1 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .hero-info p{
+        font-size: 20px;
+        line-height: 45px;
+        padding: 0 10px;
+    }
+    .hero-info {
+        width: 100%;
+    }
+}
