@@ -125,7 +125,8 @@
         flex-direction: column;
         /* width: 100%; */
         color: #fff;
-        background-color: #000;
+        background-color: rgba(9, 9, 9, 0.9);
+        transition: all 1s ease-in;
     }
     .nav-links-container.show {
         display: flex;

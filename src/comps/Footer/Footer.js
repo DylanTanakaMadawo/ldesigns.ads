@@ -51,7 +51,7 @@ function Footer() {
       </section>
       <p className='developer'>Site developed dylan madawo</p>
       <Link
-        className='social-icon-link developer-link'
+        className='developer-link'
         to={'//www.instagram.com'}
         target='_blank'
         aria-label='Instagram'

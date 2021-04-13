@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import './Navbar.css'
 import mainlogo from '../../images/images/Logos/mainlogo.png'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
     useEffect(() => {
@@ -22,7 +23,11 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('scroll');
         }
-        }, [])    
+        }, [])
+
+    const animateFrom = {opacity: 0, y: -40}
+    const animateTo = {opacity: 1, y: 0}
+
     return (
         <nav className={show ? 'nav-background' : 'navbar-container'}>
             <div className="nav-logo">
@@ -34,7 +39,11 @@ const Navbar = () => {
             </button>
             <div className={open ? 'nav-links-container' : 'nav-links-container show'} id='nav-links-container'>
                 <ul className='nav-links'>
-                    <li className="links">
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.05}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -45,8 +54,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Home</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.10}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -57,8 +70,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Banners</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.15}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -69,8 +86,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Flyers</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.20}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -81,8 +102,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Logos</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.25}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -93,8 +118,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Business Cards</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.30}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -105,8 +134,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Car Branding</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.35}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor' : 'nav-anchor'}
                             onClick={handleOpen}
@@ -117,8 +150,12 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Social Media Ads</Link>
-                    </li>
-                    <li className="links">
+                    </motion.li>
+                    <motion.li
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.30}} 
+                        className="links">
                         <Link
                             className={show ? 'new-nav-anchor contact' : 'nav-anchor contact'}
                             onClick={handleOpen}
@@ -129,7 +166,7 @@ const Navbar = () => {
                             offset={-70}
                             duration={700}
                         >Contact Us</Link>
-                    </li>
+                    </motion.li>
                 </ul>
             </div>
     </nav>
