@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 768px) {
     .contact-section {
-        height: 110vh;
+        height: 170vh;
         padding: 0px 50px;
         flex-direction: column;
     }
@@ -45,14 +45,14 @@
         margin-left: 80px;
     }
     .contacts {
-        margin-top: 0;
+        margin-top: 50px;
         margin-right: 0;
         margin-left: 30px;
-        margin-bottom: 40px;
+        margin-bottom: 140px;
     }
     .contacts h1 {
         padding: 15px;
-        color: red;
+        /* color: red; */
         font-size: 30px;
     }
     .contacts-link {
@@ -60,6 +60,10 @@
     }
     .times {
         margin-left: 30px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
+    }
+    .business-hours {
+        margin-bottom: 130px;
+        margin-top: 50px;
     }
 }
