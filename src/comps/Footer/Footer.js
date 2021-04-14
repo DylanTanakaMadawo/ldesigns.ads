@@ -15,10 +15,10 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              LOVECKYADS
+              ldesigns.ads
             </Link>
           </div>
-          <small className='website-rights'>© 2021 LOVECKYADS. ALL RIGHTS RESERVED.</small>
+          <small className='website-rights'>© 2021 ldesigns.ads. ALL RIGHTS RESERVED.</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'

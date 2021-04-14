@@ -29,9 +29,9 @@ const Navbar = () => {
     const animateTo = {opacity: 1, y: 0}
 
     return (
-        <nav className={show ? 'nav-background' : 'navbar-container'}>
+        <nav className={show ? 'nav-background' : 'navbar-container'} >
             <div className="nav-logo">
-                <img src={mainlogo} alt="website-logo" onClick={() => setOpen(true)}/>
+                <a href="#home"><img src={mainlogo} alt="website-logo" onClick={() => setOpen(true)}/></a>
                 <h1><a href="#home" className={show ? 'new-logo-text' : 'logo-text'}>ldesigns.ads</a></h1>
             </div>
             <button className={show ? 'hamburger' : 'new-hamburger'} id="hamburger" onClick={handleOpen}>

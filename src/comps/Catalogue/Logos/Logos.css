@@ -1,4 +1,32 @@
 .logos-section {
-    height: 100vh;
-    background: rgb(255, 0, 140);
+    height: 120vh;
+    margin-top: 100px;
+    text-align: center;
+
+}
+.logos-section h1 {
+    padding: 25px 0;
+}
+
+.logos-section p {
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.para {
+    width: 50%;
+    margin-left: 350px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 786px) {
+    .para {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+    .logos-section p {
+        margin: 0;
+        font-size: 20px;
+    }
 }

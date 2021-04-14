@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 
     transition-timing-function: ease-in-out;
     transition: all 0.5s;
@@ -127,6 +127,111 @@
         color: #fff;
         background-color: rgba(9, 9, 9, 0.9);
         transition: all 1s ease-in;
+        margin-right: 15px;
+    }
+    .nav-links-container.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+    .new-hamburger {
+        display: block;
+    }
+    
+    .links a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .links {
+        padding: 7px;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-right: 1000px;
+    }
+    .hamburger {
+        padding: 20px;
+        margin-left: 200px;
+    }
+    .new-hamburger {
+        padding: 20px;
+        margin-left: 200px;
+    }
+    .nav-logo h1 {
+        display: none;
+    }
+    .contact {
+        margin-left: 0;
+    }
+    .nav-logo {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-links-container{
+        display: none;
+        flex-direction: column;
+        /* width: 100%; */
+        color: #fff;
+        background-color: rgba(9, 9, 9, 0.9);
+        transition: all 1s ease-in;
+        margin-right: 15px;
+    }
+    .nav-links-container.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+    .new-hamburger {
+        display: block;
+    }
+    
+    .links a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .links {
+        padding: 7px;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-right: 1000px;
+    }
+    .hamburger {
+        padding: 20px;
+        margin-left: 200px;
+    }
+    .new-hamburger {
+        padding: 20px;
+        margin-left: 200px;
+    }
+    .nav-logo h1 {
+        display: none;
+    }
+    .contact {
+        margin-left: 0;
+    }
+    .nav-logo {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .nav-links-container{
+        display: none;
+        flex-direction: column;
+        /* width: 100%; */
+        color: #fff;
+        background-color: rgba(9, 9, 9, 0.9);
+        transition: all 1s ease-in;
+        margin-right: 15px;
     }
     .nav-links-container.show {
         display: flex;
@@ -170,3 +275,6 @@
         margin-right: 0;
     }
 }
+
+
+
