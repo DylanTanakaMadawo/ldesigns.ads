@@ -17,7 +17,7 @@ const Contact = () => {
 
             </div>
             <div className="contacts">
-                <h1>Email :
+                <h1 className='contact-h1'>Email :
                     <Link
                         // style={{color:'#6f7370'}}
                         className='contacts-link' 
@@ -27,7 +27,7 @@ const Contact = () => {
                     >ldesigns@web.com
                     </Link>
                 </h1>
-                <h1>Facebook :
+                <h1 className='contact-h1'>Facebook :
                     <Link
                         // style={{color:'#6f7370'}}
                         className='contacts-link' 
@@ -37,7 +37,7 @@ const Contact = () => {
                     >facebook
                     </Link>
                 </h1>
-                <h1>Instagram :
+                <h1 className='contact-h1'>Instagram :
                     <Link
                         // style={{color:'#6f7370'}}
                         className='contacts-link' 
@@ -47,13 +47,13 @@ const Contact = () => {
                     >instagram
                     </Link>
                 </h1>
-                <h1>Phone :
+                <h2>Phone :
                     <ul>
                         <li>+263774567786</li>
                         <li>+263774567786</li>
                         <li>+263774567786</li>
                     </ul>
-                </h1>
+                </h2>
             </div>
         </div>
     )
